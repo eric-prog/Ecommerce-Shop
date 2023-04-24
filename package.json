@@ -9,15 +9,23 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@react-three/drei": "^9.65.5",
+    "@react-three/fiber": "^8.12.2",
+    "@reduxjs/toolkit": "^1.9.5",
     "@types/node": "18.15.13",
     "@types/react": "18.0.38",
     "@types/react-dom": "18.0.11",
+    "@types/three": "^0.150.2",
     "autoprefixer": "10.4.14",
     "next": "13.3.1",
+    "next-redux-wrapper": "^8.1.0",
     "postcss": "8.4.23",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-redux": "^8.0.5",
+    "react-webcam": "^7.0.1",
     "tailwindcss": "3.3.1",
+    "three": "^0.151.3",
     "typescript": "5.0.4"
   }
 }

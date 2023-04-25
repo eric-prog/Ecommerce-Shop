@@ -1,6 +1,3 @@
-import { StaticImageData } from "next/image";
-
-
 export interface AccountModel {
     firstName: string,
     lastName: string,

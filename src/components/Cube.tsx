@@ -3,7 +3,8 @@ import React, { useRef } from 'react'
 import AuthorImg from "../assets/author.jpeg"
 import AuthorStoryImg from "../assets/story.png"
 import { ThreeElements, useLoader } from '@react-three/fiber'
-import { Edges, useCubeTexture } from "@react-three/drei"
+import { Edges } from "@react-three/drei"
+
 
 export default function Cube(props: ThreeElements['mesh']) {
     const ref = useRef<THREE.Mesh>(null!)
@@ -17,7 +18,6 @@ export default function Cube(props: ThreeElements['mesh']) {
             ref={ref}
             >
             <boxGeometry args={[3, 3, 3]} attach="geometry" />
-            {/* <meshStandardMaterial color='yellow' /> */}
             <meshStandardMaterial color={"yellow"} attach="material-0" />
             <meshStandardMaterial color={"yellow"} attach="material-1" />
             <meshStandardMaterial color={"yellow"} attach="material-2" />

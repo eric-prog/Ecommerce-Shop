@@ -1,6 +1,5 @@
 import React, { PropsWithChildren } from "react";
 import { useDispatch, useSelector } from "react-redux"
-import { ProductModel } from '@/models/ProductModel'
 import { useEffect } from 'react'
 import { updateTotal } from '@/slices/cartSlice'
 import { RootState } from "../store"
@@ -8,14 +7,14 @@ import Navbar from "./Navbar";
 
 
 export default function Layout({ children }: PropsWithChildren) {
-    const products = useSelector((store: RootState) => store.cart.products) as ProductModel[]
-    const account = useSelector((store: RootState) => store.account)
+  const products = useSelector((store: RootState) => store.cart.products) 
+  const account = useSelector((store: RootState) => store.account)
 
-    const dispatch = useDispatch()
+  const dispatch = useDispatch()
 
-    useEffect(() => {
-        dispatch(updateTotal())
-    }, [products, account, dispatch])
+  useEffect(() => {
+      dispatch(updateTotal())
+  }, [products, account, dispatch])
 
   return (
     <div className="min-h-screen w-full h-full">

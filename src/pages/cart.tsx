@@ -1,11 +1,10 @@
 import { RootState } from "../store"
 import { useSelector } from "react-redux"
 import Product from "@/components/Product"
-import { ProductModel } from "../models/ProductModel"
 
 
 export default function Cart() {
-    const products = useSelector((store: RootState) => store.cart.products) as ProductModel[]
+    const products = useSelector((store: RootState) => store.cart.products) 
     const { totalPrice, totalQuantity } = useSelector((store: RootState) => store.cart)
 
     return (

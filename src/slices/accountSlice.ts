@@ -1,5 +1,4 @@
 import { createSlice } from '@reduxjs/toolkit'
-import placeHolder from "../assets/person.jpeg"
 import { AccountModel } from '@/models/AccountModel'
 
 

@@ -1,7 +1,7 @@
 import * as THREE from 'three'
 import React, { useRef } from 'react'
 import AuthorImg from "../assets/author.jpeg"
-import AuthorStoryImg from "../assets/story.png"
+import AuthorStoryImg from "../assets/authorStory.png"
 import { ThreeElements, useLoader } from '@react-three/fiber'
 import { Edges } from "@react-three/drei"
 
